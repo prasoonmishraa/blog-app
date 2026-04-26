@@ -13,7 +13,7 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-//DATABASE
+//DATABASE CONNECTION
 await mongoose.connect(process.env.MONGO_URL);
 
 const blogSchema = new mongoose.Schema({
