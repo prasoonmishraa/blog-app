@@ -1,0 +1,19 @@
+<%- include("partials/header") %>
+
+<div class="content-container">
+
+  <h1><%= user.blogname %></h1>
+  <p class="author">By <%= user.author %></p>
+
+  <% if (user.image) { %>
+    <img src="/uploads/<%= user.image %>">
+  <% } %>
+
+  <p><%= user.content %></p>
+
+  <br>
+  <a href="/">← Back to home</a>
+
+</div>
+
+<%- include("partials/footer") %>

@@ -1,0 +1,36 @@
+<%- include("partials/header") %>
+
+<div class="form-container">
+
+  <h2>Create New Blog</h2>
+
+  <form action="/new" method="POST" enctype="multipart/form-data">
+
+    <label>Title</label>
+    <input type="text" name="blogname" placeholder="Enter blog title..." required>
+
+    <label>Author</label>
+    <input type="text" name="author" placeholder="Your name..." required>
+
+    <label>Category</label>
+    <select name="category" required>
+      <option value="">Select Category</option>
+      <option value="Tech">Tech</option>
+      <option value="Lifestyle">Lifestyle</option>
+      <option value="Productivity">Productivity</option>
+      <option value="Education">Education</option>
+    </select>
+
+    <label>Content</label>
+    <textarea name="content" rows="8" placeholder="Write your blog..." required></textarea>
+
+    <label>Upload Image</label>
+    <input type="file" name="image">
+
+    <button type="submit">Publish Blog</button>
+
+  </form>
+
+</div>
+
+<%- include("partials/footer") %>

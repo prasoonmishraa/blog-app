@@ -1,0 +1,20 @@
+<%- include("partials/header") %>
+
+<div class="container">
+  <h2>Edit Blog</h2>
+
+  <form action="/edit/<%= user._id %>" method="POST" enctype="multipart/form-data">
+
+    <input type="text" name="blogname" value="<%= user.blogname %>" required><br><br>
+    <input type="text" name="author" value="<%= user.author %>" required><br><br>
+
+    <textarea name="content" rows="10"><%= user.content %></textarea><br><br>
+
+    <input type="file" name="image"><br><br>
+
+    <button type="submit">Update</button>
+
+  </form>
+</div>
+
+<%- include("partials/footer") %>

@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #222831, #393E46);
+  color: #EEEEEE;
+}
+
+/* ===== GRID ===== */
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* ===== GLASS CARD ===== */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 15px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 173, 181, 0.25);
+}
+
+/* ===== IMAGE ===== */
+.blog-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+/* ===== TEXT ===== */
+.card h2 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.author {
+  font-size: 12px;
+  color: #00ADB5;
+}
+
+/* ===== TAGS ===== */
+.tags {
+  margin-top: 8px;
+}
+
+.tag {
+  display: inline-block;
+  background: rgba(0, 173, 181, 0.2);
+  color: #00ADB5;
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-size: 11px;
+  margin-right: 5px;
+}
+
+/* ===== LINKS ===== */
+a {
+  color: #00ADB5;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* ===== BUTTON ===== */
+button {
+  background: #00ADB5;
+  color: #222831;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== CONTENT PAGE (MEDIUM STYLE) ===== */
+.content-container {
+  max-width: 700px;
+  margin: auto;
+  padding: 40px 20px;
+  line-height: 1.8;
+}
+
+.content-container h1 {
+  font-size: 32px;
+}
+
+.content-container p {
+  font-size: 18px;
+  color: #dddddd;
+}
+
+.content-container img {
+  width: 100%;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+/* ===== FORM CONTAINER ===== */
+.form-container {
+  max-width: 600px;
+  margin: 60px auto;
+  background: #393E46;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* TITLE */
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #EEEEEE;
+}
+
+/* LABELS */
+.form-container label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #00ADB5;
+}
+
+/* INPUTS */
+.form-container input,
+.form-container textarea,
+.form-container select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #222831;
+  color: #EEEEEE;
+  outline: none;
+}
+
+/* FOCUS EFFECT */
+.form-container input:focus,
+.form-container textarea:focus,
+.form-container select:focus {
+  border: 1px solid #00ADB5;
+}
+
+/* BUTTON */
+.form-container button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  background: #00ADB5;
+  color: #222831;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.form-container button:hover {
+  background: #019ca3;
+  transform: scale(1.02);
+}
+.form-container {
+  backdrop-filter: blur(10px);
+}

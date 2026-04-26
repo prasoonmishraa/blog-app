@@ -1,0 +1,40 @@
+<%- include("partials/header") %>
+
+<div class="container">
+  <% users.forEach(user => { %>
+
+    <div class="card">
+
+      <% if (user.image) { %>
+        <img src="/uploads/<%= user.image %>" class="blog-img">
+      <% } %>
+
+      <h2><%= user.blogname %></h2>
+      <p class="author">By <%= user.author %></p>
+
+      <p><%= user.content.substring(0, 100) %>...</p>
+
+      <!-- TAGS -->
+      <div class="tags">
+        <span class="tag">Blog</span>
+        <span class="tag">Writing</span>
+      </div>
+
+      <br>
+
+      <a href="/content/<%= user._id %>">Read More →</a>
+
+      <br><br>
+
+      <a href="/edit/<%= user._id %>">Edit</a>
+
+      <form action="/delete/<%= user._id %>" method="POST" style="display:inline;">
+        <button type="submit">Delete</button>
+      </form>
+
+    </div>
+
+  <% }) %>
+</div>
+
+<%- include("partials/footer") %>
