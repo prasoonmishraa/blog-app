@@ -3,6 +3,9 @@
 <p align="center">
   ✨ A modern full-stack blog platform with authentication, post management & clean UI
 </p>
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?color=00C9A7&size=25&center=true&vCenter=true&width=600&lines=Create+and+Manage+Blogs;Secure+Authentication+System;Modern+UI+Experience;Full+Stack+Project" />
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Node.js-Backend-green?style=for-the-badge&logo=node.js" />
@@ -17,17 +20,9 @@
 
 🔗 **https://blog-app-ly7o.onrender.com/**
 
----
 
-## ⚡ Typing Effect
-
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=00C9A7&size=25&center=true&vCenter=true&width=600&lines=Create+and+Manage+Blogs;Secure+Authentication+System;Modern+UI+Experience;Full+Stack+Project" />
-</p>
 
 ---
-
-## 📸 Screenshots
 
 ### 🏠 Home / Blog Feed
 
@@ -41,12 +36,12 @@
 
 ## 🚀 Features
 
-✨ User Authentication (JWT)
-✨ Create, Edit & Delete Blogs
-✨ Secure Backend APIs
-✨ Clean & Responsive UI
-✨ Full-stack CRUD functionality
-✨ Toast Notifications & Smooth UX
+✨ User Authentication (JWT)    
+✨ Create, Edit & Delete Blogs    
+✨ Secure Backend APIs    
+✨ Clean & Responsive UI    
+✨ Full-stack CRUD functionality    
+✨ Toast Notifications & Smooth UX    
 
 ---
 
